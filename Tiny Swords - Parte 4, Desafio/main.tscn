@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://d24hstqbrry5n"]
+[gd_scene load_steps=40 format=3 uid="uid://d24hstqbrry5n"]
 
 [ext_resource type="PackedScene" uid="uid://bde0jlck61cdp" path="res://player/player.tscn" id="1_kxa3m"]
 [ext_resource type="Script" path="res://main.gd" id="1_p6sn7"]
@@ -20,6 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://d3mjufoheeq45" path="res://addons/Tiny Swords/Deco/09.png" id="16_1vlbc"]
 [ext_resource type="Script" path="res://systems/difficulty_system.gd" id="16_xur7a"]
 [ext_resource type="PackedScene" uid="uid://xoffyjiw628u" path="res://misc/tree.tscn" id="17_eaem8"]
+[ext_resource type="PackedScene" uid="uid://tlkekcn06j7d" path="res://misc/banner.tscn" id="21_7vlm7"]
+[ext_resource type="PackedScene" uid="uid://cadymfx2rhqt1" path="res://misc/bannerbRADESCO.tscn" id="22_5p6sr"]
+[ext_resource type="PackedScene" uid="uid://dxojuptcjbmoi" path="res://misc/BARRACA.tscn" id="23_0y4mh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_btqvb"]
 texture = ExtResource("5_kwkyu")
@@ -364,9 +367,6 @@ position = Vector2(-97, 805)
 [node name="Tree64" parent="Trees" instance=ExtResource("17_eaem8")]
 position = Vector2(-258, -58)
 
-[node name="Tree65" parent="Trees" instance=ExtResource("17_eaem8")]
-position = Vector2(377, 319)
-
 [node name="Tree49" parent="Trees" instance=ExtResource("17_eaem8")]
 position = Vector2(-976, 1162)
 
@@ -410,3 +410,21 @@ position = Vector2(-657, 2018)
 position = Vector2(-269, 2074)
 
 [node name="GameUI" parent="." instance=ExtResource("3_wx2ey")]
+
+[node name="Tree" parent="." instance=ExtResource("21_7vlm7")]
+position = Vector2(870, 538)
+
+[node name="Tree2" parent="." instance=ExtResource("21_7vlm7")]
+position = Vector2(870, 193)
+
+[node name="Tree3" parent="." instance=ExtResource("22_5p6sr")]
+position = Vector2(363, 533)
+
+[node name="Tree6" parent="." instance=ExtResource("22_5p6sr")]
+position = Vector2(363, 533)
+
+[node name="Tree4" parent="." instance=ExtResource("22_5p6sr")]
+position = Vector2(379, 177)
+
+[node name="Tree5" parent="." instance=ExtResource("23_0y4mh")]
+position = Vector2(623, 246)

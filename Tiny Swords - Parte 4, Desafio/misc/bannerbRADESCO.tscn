@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cadymfx2rhqt1"]
+
+[ext_resource type="Texture2D" uid="uid://6cxqj3xeb4kk" path="res://addons/bannerbRADESCO.png" id="2_v8qin"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wcfmn"]
+radius = 16.0
+
+[node name="Tree" type="StaticBody2D"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(25, -16)
+shape = SubResource("CircleShape2D_wcfmn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-22, -17)
+shape = SubResource("CircleShape2D_wcfmn")
+
+[node name="Banner" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("2_v8qin")

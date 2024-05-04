@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxojuptcjbmoi"]
+
+[ext_resource type="Texture2D" uid="uid://b4t40n6qyf2fo" path="res://addons/camp.png" id="1_0lrkx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wcfmn"]
+radius = 40.0125
+
+[node name="Tree" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, -42)
+shape = SubResource("CircleShape2D_wcfmn")
+
+[node name="Camp" type="Sprite2D" parent="."]
+position = Vector2(-5, -53)
+texture = ExtResource("1_0lrkx")
